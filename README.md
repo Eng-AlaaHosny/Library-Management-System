@@ -3,17 +3,29 @@ A comprehensive Django-based Library Management System designed to streamline li
 Features
 Core Functionality
 📚 Book catalog management (CRUD operations)
+
 👥 User authentication and authorization
+
 🔍 Advanced search and filtering for books
+
 📅 Borrowing/returning system with due dates
+
 🔔 Notifications for overdue books
+
 📊 Dashboard with library statistics
+
 Technical Highlights
+
 🏗 Django MVC architecture
+
 🔒 Secure authentication system
+
 📱 Responsive design (using custom CSS)
+
 🗃 SQLite database (can be configured for other DBs)
+
 🛠 Context processors for global template variables
+
 📝 Form validation for all user inputs
 ```
 Project Structure
@@ -57,7 +69,7 @@ Smart-Budget-Tracker/
 ## Installation
 
 1. **Clone the repository**
-   ```bash
+  
    git clone https://github.com/Eng-AlaaHosny/Library-Management-System.git
    cd Library-Management-System
 
