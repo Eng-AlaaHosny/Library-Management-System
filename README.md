@@ -15,34 +15,41 @@ Technical Highlights
 🗃 SQLite database (can be configured for other DBs)
 🛠 Context processors for global template variables
 📝 Form validation for all user inputs
-
+```
 Project Structure
   
-Library-Management-System/
-├── barrowing/ # Borrowing/returning functionality
-│ ├── forms.py # Borrowing forms
-│ ├── models.py # Borrowing models
-│ ├── urls.py # Borrowing URLs
-│ └── views.py # Borrowing views
-├── library/ # Core library app
-│ ├── context_processor.py # Global context
-│ ├── models.py # Book models
-│ ├── utils.py # Utility functions
-│ └── views.py # Library views
-├── userauths/ # User authentication
-│ ├── forms.py # User forms
-│ └── views.py # Auth views
-├── lms_project/ # Project configuration
-│ ├── settings.py # Django settings
-│ └── urls.py # Main URLs
-├── static/ # Static files
-│ ├── css/ # Custom styles
-│ ├── scripts/ # JavaScript
-│ └── images/ # Library images
-├── templates/ # HTML templates
-├── media/ # User-uploaded files
-├── manage.py # Django management
-└── requirements.txt # Python dependencies
+Smart-Budget-Tracker/
+├── .gitignore                 # Git ignore rules
+├── package.json               # Node.js project configuration
+├── package-lock.json          # Automatic npm dependency tree
+├── server.js                  # Main application entry point
+├── README.md                  # Project documentation (you're editing this)
+│
+├── .vscode/                   # VS Code workspace settings
+│   └── settings.json          # Editor configuration
+│
+├── server/                    # Backend server files
+│   ├── config/
+│   │   └── db.js              # Database connection configuration
+│   │
+│   ├── controller/            # Business logic
+│   │   ├── chartController.js # Chart data handling
+│   │   ├── crud.js            # Basic CRUD operations
+│   │   ├── mainpageController.js # Main page logic
+│   │   ├── mainpageCrud.js    # Main page CRUD
+│   │   └── userController.js  # User authentication
+│   │
+│   └── routes/                # API endpoints
+│       └── authRoutes.js      # Authentication routes
+│
+├── view/                      # Frontend templates (EJS)
+│   ├── login.ejs              # Login page template
+│   ├── mainpage.ejs           # Dashboard template
+│   └── resetPassword.ejs      # Password reset template
+│
+└── style.css                  # Main stylesheet
+```
+
 
 
 ## Installation
