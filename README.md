@@ -62,52 +62,75 @@ Smart-Budget-Tracker/
 └── style.css                  # Main stylesheet
 ```
 
+## 🚀 Installation & Setup
 
+### Prerequisites
+- Python 3.8+
+- pip
+- Virtualenv (recommended)
 
-## Installation
-
-## Installation
-
-1. **Clone the repository**
-  
+### Installation Steps
+1. Clone the repository:
+   ```bash
    git clone https://github.com/Eng-AlaaHosny/Library-Management-System.git
    cd Library-Management-System
 
-2.Set up virtual environment
-python -m venv myenv
-source myenv/bin/activate  # On Windows use `myenv\Scripts\activate`
+   Set up virtual environment:
+   python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-3.Install dependencies
+
+Install dependencies:
 pip install -r requirements.txt
 
-4.Apply migrations
+Configure environment:
+cp .env.example .env
+nano .env  # Edit with your configuration
+
+
+Apply migrations:
 python manage.py migrate
 
-5.Create superuser
+
+Create superuser:
 python manage.py createsuperuser
 
-6.Run development server
+
+Run development server:
 python manage.py runserver
 
+⚙️ Configuration
 
-Configuration:
-Configure your environment variables in .env:
+Configure your .env file with these essential variables:
 DEBUG=True
 SECRET_KEY=your-secret-key-here
 DATABASE_URL=sqlite:///db.sqlite3
+EMAIL_HOST=your-smtp-host
+EMAIL_PORT=587
+EMAIL_USER=your-email@domain.com
+EMAIL_PASSWORD=your-email-password
 
-Usage
+💻 Usage
 Admin Interface
+
 Access the admin panel at http://localhost:8000/admin/ to:
-Manage books and categories
-View borrowing records
-Manage user accounts
+
+    Manage books, categories, and inventory
+
+    View and manage borrowing records
+
+    Administer user accounts and permissions
+
+    Generate system reports
 
 User Features
-Register/login at http://localhost:8000/userauths/sign-up/
-Browse available books
-Borrow/return books (if authenticated)
-View personal borrowing history
 
+    Register/login at http://localhost:8000/userauths/sign-up/
 
-   
+    Browse and search available books
+
+    Borrow/return books (when authenticated)
+
+    View personal borrowing history and due dates
+
+    Receive email notifications for overdue books
