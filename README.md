@@ -71,11 +71,11 @@ Smart-Budget-Tracker/
 
 ### Installation Steps
 1. Clone the repository:
-   ```bash
+  
    git clone https://github.com/Eng-AlaaHosny/Library-Management-System.git
    cd Library-Management-System
 
-   Set up virtual environment:
+Set up virtual environment:
    python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
@@ -110,27 +110,3 @@ EMAIL_PORT=587
 EMAIL_USER=your-email@domain.com
 EMAIL_PASSWORD=your-email-password
 
-💻 Usage
-Admin Interface
-
-Access the admin panel at http://localhost:8000/admin/ to:
-
-    Manage books, categories, and inventory
-
-    View and manage borrowing records
-
-    Administer user accounts and permissions
-
-    Generate system reports
-
-User Features
-
-    Register/login at http://localhost:8000/userauths/sign-up/
-
-    Browse and search available books
-
-    Borrow/return books (when authenticated)
-
-    View personal borrowing history and due dates
-
-    Receive email notifications for overdue books
