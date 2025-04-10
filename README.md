@@ -65,44 +65,57 @@ Smart-Budget-Tracker/
 ## 🚀 Installation & Setup
 
 ### Prerequisites
+
 - Python 3.8+
 - pip
 - Virtualenv (recommended)
 
 ### Installation Steps
+
 1. Clone the repository:
   
    git clone https://github.com/Eng-AlaaHosny/Library-Management-System.git
    cd Library-Management-System
 
 Set up virtual environment:
+```
    python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
+   ```
+source venv/bin/activate  # On Windows: 
+``
+venv\Scripts\activate
+``
 
 Install dependencies:
+```
 pip install -r requirements.txt
-
+```
 Configure environment:
+```
 cp .env.example .env
+`
 nano .env  # Edit with your configuration
+```
 
 
 Apply migrations:
+```
 python manage.py migrate
-
+```
 
 Create superuser:
+```
 python manage.py createsuperuser
-
+```
 
 Run development server:
+```
 python manage.py runserver
-
+```
 ⚙️ Configuration
 
 Configure your .env file with these essential variables
-
+```
 DEBUG=True
 
 SECRET_KEY=your-secret-key-here
@@ -116,4 +129,4 @@ EMAIL_PORT=587
 EMAIL_USER=your-email@domain.com
 
 EMAIL_PASSWORD=your-email-password
-
+```
