@@ -101,12 +101,19 @@ python manage.py runserver
 
 ⚙️ Configuration
 
-Configure your .env file with these essential variables:
+Configure your .env file with these essential variables
+
 DEBUG=True
+
 SECRET_KEY=your-secret-key-here
+
 DATABASE_URL=sqlite:///db.sqlite3
+
 EMAIL_HOST=your-smtp-host
+
 EMAIL_PORT=587
+
 EMAIL_USER=your-email@domain.com
+
 EMAIL_PASSWORD=your-email-password
 
